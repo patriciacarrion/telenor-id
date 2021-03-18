@@ -1,0 +1,81 @@
+// Flexbox
+.dflex {
+    display: flex;
+}
+
+.hbox:extend(.dflex) {
+    flex-direction: row; // items organized horizontally from left to right
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.vbox:extend(.dflex) {
+    flex-direction: column; // items organized vertically from top to bottom
+    &.reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+[class^="flex-"] {
+    max-width: 100%;
+    min-height: 0px !important;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+.flex-5 {
+    flex: 5;
+}
+
+.flex-6 {
+    flex: 6;
+}
+
+.flex-7 {
+    flex: 7;
+}
+
+.flex-8 {
+    flex: 8;
+}
+
+.flex-9 {
+    flex: 9;
+}
+
+.flex-10 {
+    flex: 10;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+// Align items
+
+.f-ai-start {
+    align-items: flex-start;
+}
+
+.f-ai-end {
+    align-items: flex-end;
+}
+
+.f-ai-center {
+    align-items: center;
+}

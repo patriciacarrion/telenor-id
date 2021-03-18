@@ -1,0 +1,117 @@
+@import "variables.less";
+
+// This set of mixins allows you to create margin and padding classes dynamically.
+
+// Mixin control
+
+// .make-margins(@breakpoint, @size, @decrement)
+//        @breakpoint: To be used with Bootstrap. Must supply breakpoints: xs, sm, md, lg or xl
+//        @size: Largest size of margin you desire. Default is 5
+//        @decrement: Amount @size is decremented on each loop. Default is 1
+
+// Margins
+.make-margins(@breakpoint: xs, @size: 5, @decrement: 1) when (@size >= 0) {
+    .make-margins(@breakpoint, @size - @decrement);
+
+    @size-rem: ~"@{size}rem";
+
+    .m@{size}-@{breakpoint} {
+        margin: @size-rem;
+    }
+    .mt@{size}-@{breakpoint} {
+        margin-top: @size-rem;
+    }
+    .mr@{size}-@{breakpoint} {
+        margin-right: @size-rem;
+    }
+    .mb@{size}-@{breakpoint} {
+        margin-bottom: @size-rem;
+    }
+    .ml@{size}-@{breakpoint} {
+        margin-left: @size-rem;
+    }
+    .mx@{size}-@{breakpoint} {
+        margin-right: @size-rem;
+        margin-left: @size-rem;
+    }
+    .my@{size}-@{breakpoint} {
+        margin-top: @size-rem;
+        margin-bottom: @size-rem;
+    }
+}
+
+.make-margins(xs);
+
+@media (max-width: @screen-x-sm-max) {
+    .make-margins(xs);
+}
+
+@media (min-width: @screen-sm-min) {
+    .make-margins(sm);
+}
+
+@media (min-width: @screen-md-min) {
+    .make-margins(md);
+}
+
+@media (min-width: @screen-lg-min) {
+    .make-margins(lg);
+}
+
+@media (min-width: @screen-x-lg-min) {
+    .make-margins(xl);
+}
+
+// Paddings
+.make-paddings(@breakpoint: xs, @size: 5, @decrement: 1) when (@size >= 0) {
+    .make-paddings(@breakpoint, @size - @decrement);
+
+    @size-rem: ~"@{size}rem";
+
+    .p@{size}-@{breakpoint} {
+        padding: @size-rem;
+    }
+    .pt@{size}-@{breakpoint} {
+        padding-top: @size-rem;
+    }
+    .pr@{size}-@{breakpoint} {
+        padding-right: @size-rem;
+    }
+    .pb@{size}-@{breakpoint} {
+        padding-bottom: @size-rem;
+    }
+    .pl@{size}-@{breakpoint} {
+        padding-left: @size-rem;
+    }
+    .px@{size}-@{breakpoint} {
+        padding-right: @size-rem;
+        padding-left: @size-rem;
+    }
+    .py@{size}-@{breakpoint} {
+        padding-top: @size-rem;
+        padding-bottom: @size-rem;
+    }
+}
+
+.make-paddings(xs);
+
+@media (max-width: @screen-x-sm-max) {
+    .make-paddings(xs);
+}
+
+@media (min-width: @screen-sm-min) {
+    .make-paddings(sm);
+}
+
+@media (min-width: @screen-md-min) {
+    .make-paddings(md);
+}
+
+@media (min-width: @screen-lg-min) {
+    .make-paddings(lg);
+}
+
+@media (min-width: @screen-x-lg-min) {
+    .make-paddings(xl);
+}
+

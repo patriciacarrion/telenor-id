@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Telenor';
+    src: url('Telenor-MediumItalic.eot');
+    src: url('Telenor-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Telenor-MediumItalic.woff2') format('woff2'),
+        url('Telenor-MediumItalic.woff') format('woff'),
+        url('Telenor-MediumItalic.ttf') format('truetype'),
+        url('Telenor-MediumItalic.svg#Telenor-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telenor';
+    src: url('Telenor.eot');
+    src: url('Telenor.eot?#iefix') format('embedded-opentype'),
+        url('Telenor.woff2') format('woff2'),
+        url('Telenor.woff') format('woff'),
+        url('Telenor.ttf') format('truetype'),
+        url('Telenor.svg#Telenor') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telenor';
+    src: url('Telenor-Light.eot');
+    src: url('Telenor-Light.eot?#iefix') format('embedded-opentype'),
+        url('Telenor-Light.woff2') format('woff2'),
+        url('Telenor-Light.woff') format('woff'),
+        url('Telenor-Light.ttf') format('truetype'),
+        url('Telenor-Light.svg#Telenor-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telenor';
+    src: url('Telenor-Italic.eot');
+    src: url('Telenor-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Telenor-Italic.woff2') format('woff2'),
+        url('Telenor-Italic.woff') format('woff'),
+        url('Telenor-Italic.ttf') format('truetype'),
+        url('Telenor-Italic.svg#Telenor-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telenor';
+    src: url('Telenor-Medium.eot');
+    src: url('Telenor-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Telenor-Medium.woff2') format('woff2'),
+        url('Telenor-Medium.woff') format('woff'),
+        url('Telenor-Medium.ttf') format('truetype'),
+        url('Telenor-Medium.svg#Telenor-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telenor';
+    src: url('Telenor-BoldItalic.eot');
+    src: url('Telenor-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Telenor-BoldItalic.woff2') format('woff2'),
+        url('Telenor-BoldItalic.woff') format('woff'),
+        url('Telenor-BoldItalic.ttf') format('truetype'),
+        url('Telenor-BoldItalic.svg#Telenor-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telenor';
+    src: url('Telenor-LightItalic.eot');
+    src: url('Telenor-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Telenor-LightItalic.woff2') format('woff2'),
+        url('Telenor-LightItalic.woff') format('woff'),
+        url('Telenor-LightItalic.ttf') format('truetype'),
+        url('Telenor-LightItalic.svg#Telenor-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telenor';
+    src: url('Telenor-Bold.eot');
+    src: url('Telenor-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Telenor-Bold.woff2') format('woff2'),
+        url('Telenor-Bold.woff') format('woff'),
+        url('Telenor-Bold.ttf') format('truetype'),
+        url('Telenor-Bold.svg#Telenor-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

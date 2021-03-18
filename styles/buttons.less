@@ -1,0 +1,113 @@
+@import "variables.less";
+
+button[class^="btn-"] {
+    outline: none;
+    &.disabled {
+        cursor:not-allowed;
+    }
+    &.active {
+        cursor: pointer;
+    }
+}
+
+.btn-base {
+    font-family: @f-family;
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    font-size: @t-body-sm;
+    line-height: calc(@t-body-sm + 50%);
+    padding: 1.25rem 1.75rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-width: 10ch; // character unit
+}
+
+// Primary button
+.btn-primary:extend(.btn-base) {
+    background-color: @primary-color;
+    border-color: @primary-color;
+    color: @white;
+    &:disabled {
+        background-color: @lightgray2;
+        border-color: @lightgray2;
+    }
+    &.active {
+        background-color: shade(@primary-color, 15%);
+        border-color: shade(@primary-color, 15%);
+    }
+     &:hover:enabled,
+     &.active:hover:enabled {
+        background-color: shade(@primary-color, 15%);
+        border-color: shade(@primary-color, 15%);
+     }
+}
+
+// Secondary button
+.btn-secondary:extend(.btn-base) {
+    border-color: @primary-color;
+    background-color: transparent;
+    color: @primary-color;
+    &:disabled {
+        border-color: @lightgray2;
+        color: @darkgray;
+    }
+    &.active {
+        background-color: @lightgray1;
+        border-color: @primary-color;
+        color: @primary-color;
+    }
+    &:hover:enabled,
+    &.active:hover:enabled {
+        background-color: @primary-color;
+        border-color: @primary-color;
+        box-shadow: none;
+        color: @white;
+    }
+}
+
+// Ghost button
+.btn-ghost:extend(.btn-base) {
+    font-size: @t-body;
+    border-color: transparent;
+    background-color: transparent;
+    color: @link-color;
+    &:disabled {
+        color: @darkgray;
+    }
+    &.active {
+        background-color: @lightgray1;
+        color: shade(@link-color, 50%);
+        text-decoration: underline;
+    }
+    &:hover:enabled,
+    &.active:hover:enabled {
+        box-shadow: none;
+        color: shade(@link-color, 50%);
+        text-decoration: underline;
+    }
+}
+
+// Small button
+// Add .btn-small to Primary or Secondary buttons
+.btn-small:extend(.btn-base) {
+    font-size: @t-body-sm;
+    line-height: calc(@t-body-sm + 50%);
+    padding: .85rem 1.5rem;
+}
+
+// Tabs
+.tabs-dropdown {
+    & button.tab:extend(.btn-base) {
+        background-color: @lightgray1;
+        color: @link-color;
+        text-align: left;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 500;
+
+    }
+}

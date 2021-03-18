@@ -1,0 +1,94 @@
+.form {
+    max-width: 100%;
+    }
+
+.form-field {
+    clear: both;
+    &.disabled {
+        opacity: .45;
+    & :disabled {
+        opacity: 1;
+        }
+    }
+    & label {
+        display: block;
+        color: @text-black;
+        font-size: @t-body-sm;
+        font-weight: @f-medium;
+        text-transform: none;
+        word-break: break-all;
+        }
+    & input[class^="input-"],
+    & textarea {
+        width: 100%;
+        vertical-align: top;
+        }
+    }
+
+input:not([type]),
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="text"],
+input[type="file"],
+input[type="url"],
+input[class^="input-"],
+textarea {
+    font-family: inherit;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .35rem .75rem;
+    font-size: @t-body;
+    font-weight: @f-light !important;
+    line-height: 1.5rem;
+    background-color: transparent;
+    color: @text-black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0px;
+    box-shadow: 0rem 0rem 0rem 0rem transparent inset;
+    transition: all .1s ease;
+    min-width: 0px;
+    box-sizing: border-box;
+    &:disabled {
+        opacity: .45;
+        cursor: not-allowed;
+        }
+    }
+
+input,
+textarea,
+input.input-default {
+    // Default input
+    border-bottom-color: @lightgray2;
+    background-color: transparent;
+    padding-left: 0;
+    margin-top: .25em;
+    &:focus {
+        border-bottom-color: @primary-color;
+        }
+    &:invalid {
+        border-bottom-color: @info-red;
+        &:focus {
+            border-bottom-color: @info-red;
+            }
+        }
+    }
+
+// Textarea
+textarea {
+    resize: vertical;
+    max-height: 10rem;
+    min-height: 4rem;
+    &:not([rows]) {
+        height: 8rem;
+        }
+    }
